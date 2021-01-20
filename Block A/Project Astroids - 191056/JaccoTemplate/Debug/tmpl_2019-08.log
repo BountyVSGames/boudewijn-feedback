@@ -1,0 +1,13 @@
+﻿  asteroid.cpp
+  bullet.cpp
+  game.cpp
+C:\Users\boude\Documents\School\Github\BUAS_BlockA\Block A\Project Astroids - 191056\JaccoTemplate\game.cpp(139,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  player.cpp
+C:\Users\boude\Documents\School\Github\BUAS_BlockA\Block A\Project Astroids - 191056\JaccoTemplate\player.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\boude\Documents\School\Github\BUAS_BlockA\Block A\Project Astroids - 191056\JaccoTemplate\player.cpp(82,18): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\boude\Documents\School\Github\BUAS_BlockA\Block A\Project Astroids - 191056\JaccoTemplate\player.cpp(86,18): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+  saucer.cpp
+  surface.cpp
+  template.cpp
+  Generating Code...
+  tmpl_2019-08.vcxproj -> C:\Users\boude\Documents\School\Github\BUAS_BlockA\Block A\Project Astroids - 191056\JaccoTemplate\tmpl_2019-08_debug.exe

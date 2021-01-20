@@ -1,13 +1,14 @@
 ﻿  game.cpp
-C:\Users\boude\Documents\School\Perforce\Boudewijn191056\Year 1\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\map.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\boude\Documents\School\Perforce\Boudewijn191056\Year 1\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\game.cpp(121,15): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
-C:\Users\boude\Documents\School\Perforce\Boudewijn191056\Year 1\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\game.cpp(121,15): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\boude\Documents\School\Github\BUAS_BlockA\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\map.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\boude\Documents\School\Github\BUAS_BlockA\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\game.cpp(121,15): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
+C:\Users\boude\Documents\School\Github\BUAS_BlockA\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\game.cpp(121,15): warning C4154: deletion of an array expression; conversion to pointer supplied
   mushroompowerup.cpp
   normalblock.cpp
   player.cpp
-C:\Users\boude\Documents\School\Perforce\Boudewijn191056\Year 1\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\player.cpp(49,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\boude\Documents\School\Perforce\Boudewijn191056\Year 1\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\player.cpp(53,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\boude\Documents\School\Github\BUAS_BlockA\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\player.cpp(49,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\boude\Documents\School\Github\BUAS_BlockA\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\player.cpp(53,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   powerupblock.cpp
+  surface.cpp
   template.cpp
   Generating Code...
-  tmpl_2019-08.vcxproj -> C:\Users\boude\Documents\School\Perforce\Boudewijn191056\Year 1\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\tmpl_2019-08_debug.exe
+  tmpl_2019-08.vcxproj -> C:\Users\boude\Documents\School\Github\BUAS_BlockA\Block A\Project Super Mario Bros - 191056\JaccoTemplate - Super Mario Bros\tmpl_2019-08_debug.exe
