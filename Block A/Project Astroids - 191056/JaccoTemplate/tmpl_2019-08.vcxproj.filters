@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="surface.cpp">
+      <Filter>template code</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp">
+      <Filter>template code</Filter>
+    </ClCompile>
+    <ClCompile Include="asteroid.cpp">
+      <Filter>assets\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>assets\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>assets\scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="saucer.cpp">
+      <Filter>assets\scripts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h" />
+    <ClInclude Include="surface.h">
+      <Filter>template code</Filter>
+    </ClInclude>
+    <ClInclude Include="template.h">
+      <Filter>template code</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="asteroid.h">
+      <Filter>assets\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>assets\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>assets\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="saucer.h">
+      <Filter>assets\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="ships.h">
+      <Filter>assets\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="keyboardhandler.h">
+      <Filter>assets\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="gameobject.h">
+      <Filter>assets\scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="string.h">
+      <Filter>assets\scripts</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="template code">
+      <UniqueIdentifier>{bf32dd6e-4be7-4889-8ac6-49e7ee163c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{0093d844-def4-48fe-a8b6-a6877f9566be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\scripts">
+      <UniqueIdentifier>{821c0fb9-d5d5-4caa-aed2-4b2de46f89cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\sprites">
+      <UniqueIdentifier>{48009968-6bad-488a-a0d3-c2ae192b25a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="_readme.txt">
+      <Filter>template code</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tmpl_2019-08.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\sprites\ctankshadow.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\aagun.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\ball.png">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\biggun.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\ctankbase.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\ctankgun.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\mill.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\minigun.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\missile.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\missile_big.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\phaser.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\playership.png">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\smoke.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\sniper.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\target.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+    <Image Include="assets\sprites\turret.tga">
+      <Filter>assets\sprites</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

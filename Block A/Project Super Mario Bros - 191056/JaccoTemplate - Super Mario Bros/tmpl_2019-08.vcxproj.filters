@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="surface.cpp">
+      <Filter>template code</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp">
+      <Filter>template code</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="powerupblock.cpp">
+      <Filter>scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="normalblock.cpp">
+      <Filter>scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="mushroompowerup.cpp">
+      <Filter>scripts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h" />
+    <ClInclude Include="surface.h">
+      <Filter>template code</Filter>
+    </ClInclude>
+    <ClInclude Include="template.h">
+      <Filter>template code</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp.h" />
+    <ClInclude Include="gameobject.h">
+      <Filter>scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="keyboardhandler.h">
+      <Filter>scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="blocks.h">
+      <Filter>scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="normalblock.h">
+      <Filter>scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="powerupblock.h">
+      <Filter>scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="map.h">
+      <Filter>scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="mushroompowerup.h">
+      <Filter>scripts</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="template code">
+      <UniqueIdentifier>{bf32dd6e-4be7-4889-8ac6-49e7ee163c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts">
+      <UniqueIdentifier>{8ee9ccf9-6b6d-4956-bc9c-42fcddd271c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="_readme.txt">
+      <Filter>template code</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

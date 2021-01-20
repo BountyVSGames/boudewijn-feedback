@@ -1,0 +1,105 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// tga
+//
+
+IDR_TGA1                tga                     "assets\\sprites\\aagun.tga"
+
+IDR_TGA2                tga                     "assets\\sprites\\biggun.tga"
+
+IDR_TGA3                tga                     "assets\\sprites\\ctankbase.tga"
+
+IDR_TGA4                tga                     "assets\\sprites\\ctankgun.tga"
+
+IDR_TGA5                tga                     "assets\\sprites\\ctankshadow.tga"
+
+IDR_TGA6                tga                     "assets\\sprites\\mill.tga"
+
+IDR_TGA7                tga                     "assets\\sprites\\minigun.tga"
+
+IDR_TGA8                tga                     "assets\\sprites\\missile.tga"
+
+IDR_TGA9                tga                     "assets\\sprites\\missile_big.tga"
+
+IDR_TGA10               tga                     "assets\\sprites\\phaser.tga"
+
+IDR_TGA11               tga                     "assets\\sprites\\smoke.tga"
+
+IDR_TGA12               tga                     "assets\\sprites\\sniper.tga"
+
+IDR_TGA13               tga                     "assets\\sprites\\target.tga"
+
+IDR_TGA14               tga                     "assets\\sprites\\turret.tga"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG1                PNG                     "assets\\sprites\\ball.png"
+
+IDB_PNG2                PNG                     "assets\\sprites\\playership.png"
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
