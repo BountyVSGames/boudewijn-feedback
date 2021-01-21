@@ -9,6 +9,23 @@ namespace Tmpl8
 	}
 	void MushroomPowerup::Update(float deltaTime)
 	{
+		// Ergens in de feedback van jouw Asteroids game heb ik drie verschillende physics variabelen besproken:
+		// position
+		// velocity
+		// force.
+		//
+		// In je asteroids game is de force variabele minder relevant als hier. Want je hebt in deze game een heel erg uitgesproken
+		// force: zwaartekracht.
+		//
+		// Zwaartekracht is een force. Een force is de verandering van je velocity en een velocity is de verandering van je position.
+		// Je codeert hier impliciet krachten. Maar je kunt dit beter expliciet coderen. Elk (bewegend) object heeft een force in de vorm van
+		// vec2(0, -currentGame->GetGlobalGravity()). Deze force blijft altijd onveranderd!
+		//
+		// Als je dit mooi hebt geimplementeerd kun je heel makkelijk krachten modeleren:
+		// 
+		// force = vec2(0, -currentGame->GetGlobalGravity());
+		// velocity += force;
+		// positon += velocity;
 		if (vSpeed < 10 || !collide) vSpeed += currentGame->GetGlobalGravity();
 
 		Collision();
@@ -18,6 +35,8 @@ namespace Tmpl8
 	}
 	void MushroomPowerup::Collision()
 	{
+		// Erg grote functie, probeer hem kleiner te maken. Misschien door hem op te splitsen, of misschien door hem slimmer te maken.
+
 		//Collision Down
 		if (((currentGame->GetScreenPosY() / 32) + (scrPosY / 32) + 1) < 19)
 		{

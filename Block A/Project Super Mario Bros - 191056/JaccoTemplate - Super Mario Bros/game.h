@@ -20,6 +20,13 @@ namespace Tmpl8
 			void KeyUp(int key); //{ /* implement if you want to handle keys */ }
 			void KeyDown(int key); //{ /* implement if you want to handle keys */ }
 
+			// Wat betekenen de nummers?
+			// Een enum zou ik niet aanraden, dan krijg je alleen nog maar meer een muur van tekst. 
+			// Maar documenteer wel wat de 38, 23, 24 etc betekenen
+			// 
+			// Je zou het kunnen overwegen om deze data in een file te zetten. Ik weet niet of dat verplicht is
+			// maar in een real-world scenario zou ik dit liever niet in mijn code willen hebben. Je kunt dan de
+			// file openen en dan wegschrijven naar een hele grote array die je game dan gebruikt als map-data.
 			int grid[19][209] =
 			{
 				{00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00},
@@ -87,6 +94,8 @@ namespace Tmpl8
 			float screenPosY = 0;
 			int xOffset = 0;
 
+			// Ik heb werkelijk waar geen idee wat dit inhoud...
+			// Schrijf er een uitleg bij
 			int structures[51] =
 			{
 				NOTSOLID, //0

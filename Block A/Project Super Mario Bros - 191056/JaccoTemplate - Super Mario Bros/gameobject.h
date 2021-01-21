@@ -38,6 +38,19 @@ namespace Tmpl8
 				size = newSize;
 			};
 
+			// Markeer dit als virtual.
+			// Ik citeer:
+			// "Deleting a derived class object using a pointer of base class type that has a non-virtual
+			// destructor results in undefined behavior. To correct this situation, the base class should
+			// be defined with a virtual destructor. For example, following program results in undefined
+			// behavior."
+			// https://www.geeksforgeeks.org/virtual-destructor/
+			//
+			// Undefined behavior is een necessary evil in C++, als je er nog nooit van hebt gehoord. Maar
+			// als je undefined behavior hebt dan kan het gedrag per compiler, compiler release, compiler
+			// flags varieren. Dit is foute boel.
+			//
+			// Kortom: schrijf `virtual ~Gameobject() {};`
 			~Gameobject() {};
 
 			virtual void Animation(float deltaTime) = 0;

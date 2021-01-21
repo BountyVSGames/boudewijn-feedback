@@ -73,6 +73,8 @@ namespace Tmpl8
 	}
 	void Player::Collision()
 	{
+		// Je hebt geen up collision. Overigens is deze functie ook erg groot.
+
 		//Collision Down
 		if (((currentGame->GetScreenPosY() / 32) + (scrPosY / 32) + 1) < 19)
 		{
@@ -153,6 +155,20 @@ namespace Tmpl8
 	}
 	void Player::Movement(float deltaTime)
 	{
+		// Deze functie is erg groot. Probeer hem kleiner te maken. Je kunt bijvoorbeeld een functie schrijven
+		// dat de player input ophaalt en het in een vector zet.
+		//
+		// vec2 playerInput = GetInput();
+		// 
+		// if (playerInput.x < 0) {
+		//   MoveLeft();
+		// } else if (playerInput.x > 0) {
+		//   MoveRight();
+		// }
+		// 
+		// if (playerInput.y > 0) {
+		//   Jump();
+		// }
 		if (currentGame->GetKeyboardHandler()->isRightInputButtonDown)
 		{
 			if (hSpeed < maxSpeed)

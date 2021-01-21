@@ -26,6 +26,8 @@ namespace Tmpl8
 	// -----------------------------------------------------------
 	void Game::Init()
 	{
+		// Dit is een hele grote functie. Ik zou hem op delen in meerdere functies.
+
 		Surface* dummyTile = new Surface(32,32);
 
 		//currentMap = new Map(vec2(209 * 32, 20 * 32), vec2(104 * 32), "", "");
@@ -118,6 +120,7 @@ namespace Tmpl8
 	// -----------------------------------------------------------
 	void Game::Shutdown()
 	{
+		// Alle geinstantieerde elementen met new moeten in deze functie worden verwijderd met delete.
 		delete(grid);
 	}
 
@@ -131,6 +134,8 @@ namespace Tmpl8
 		//screen->Clear(0);
 		backgroundSprite->DrawScaled(0,0,SCRWIDTH, SCRHEIGHT, screen);
 
+		// (int) is een C-stijl cast. Dit is niet idiomatisch C++. Moderne C++ kent
+		// meerdere vormen van een cast. In dit geval moet je static_cast<int>(screenPosX % 32) gebruiken
 		xOffset = (int)screenPosX % 32;
 
 		//Sprite* testSprite = new Sprite(theTiles[1], 1);
@@ -142,6 +147,7 @@ namespace Tmpl8
 		{
 			for (int x = 0; x < 26; x++)
 			{
+				// C-stijl cast
 				int value = grid[y][((int)screenPosX/32) + x];
 
 				if (value != 0 && value < 50)
