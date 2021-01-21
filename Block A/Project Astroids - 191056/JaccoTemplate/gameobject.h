@@ -115,19 +115,18 @@ namespace Tmpl8
 			//
 			// Misschien dat je docent zegt dat het inefficient zou zijn, dan kun je hem wijzen naar deze pagina:
 			// https://en.cppreference.com/w/cpp/language/copy_elision
-			// C++ garandeerd dat als de waarde een prvalue is dat het object in-place word geconstruct.
+			// https://stackoverflow.com/questions/3601602/what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues
+			// C++ garandeerd dat als de return waarde een prvalue is dat het object in-place word geconstruct.
 			// Ofwel als je de functie als volgt gebruikt: 
 			//
 			// ```
-			// vec2 myVec = CalculateRotation(69);
 			// this->movement = CalculateRotation(69); // mag ook naar een class member
 			// ```
 			//
 			// dan is dat even efficient als
 			// 
 			// ```
-			// vec2 myVec;
-			// CalculateRotation(69, myVec);
+			// CalculateRotation(69, this->movement);
 			// ```
 			//
 			// Met deze regel kan je checken of iets een prvalue is. (De check vind plaats tijdens compilation)
