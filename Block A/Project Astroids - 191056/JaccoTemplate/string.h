@@ -2,6 +2,12 @@
 
 namespace Tmpl8
 {
+	// Ik zou al het gebruik van string vervangen met std::string. Dit is eigenlijk precies hetzelfde als deze class. Maar dan minder gevoelig voor 
+	// memory leaks want het is een container. Het beheert namelijk de string waarnaar het verwijst met move semantics e.d. (Dat is wat je hier ook doet!)
+	// https://stackoverflow.com/questions/3106110/what-is-move-semantics
+	// Als je tijd hebt moet je hier in verdiepen, dan word je een stuk beter met memory management in C++.
+	// Als je move semantics goed begrijpt dan begrijp hoe dingen als std::vector, std::string, std::unique_ptr, std::shared_ptr werken.
+	// Nu weet ik niet of je die dingen mag gebruiken in dit projectje aangezien de meeste AAA devs de pesthekel hebben aan std containers...
 	class String
 	{
 		private:

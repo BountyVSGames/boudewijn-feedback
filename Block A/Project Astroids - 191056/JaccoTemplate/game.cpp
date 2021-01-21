@@ -13,8 +13,10 @@ namespace Tmpl8
 	// -----------------------------------------------------------
 	void Game::Init()
 	{
+		// New is niet gepaart met delete. Gebruik smart pointers. Meer info aan onderaan de file.
 		keyboardHandler = new KeyboardHandler();
 
+		// New is niet gepaart met delete. Gebruik smart pointers. Meer info aan onderaan de file.
 		allGameobjects[0] = new Player(this, NULL, 5, vec2(100, 100));
 		AddAsteroid(vec2(200, 200), rand() % 360, 3);
 		AddAsteroid(vec2(400, 400), rand() % 360, 3);
@@ -125,6 +127,7 @@ namespace Tmpl8
 		{
 			if (allGameobjects[i] == NULL || !allGameobjects[i]->enabled)
 			{
+				// MEMORY LEAKS MEMORY LEAKS MEMORY LEAKS
 				allGameobjects[i] = new Bullet(this, NULL, 1, bulletPos, angle, isPlayerOwner);
 				break;
 			}
@@ -136,7 +139,24 @@ namespace Tmpl8
 		{
 			if (allGameobjects[i] == NULL || !allGameobjects[i]->enabled)
 			{
+				// MEMORY LEAKS MEMORY LEAKS MEMORY LEAKS
 				allGameobjects[i] = new Asteroid(this, NULL, lifeCycle, astroidPos, angle, lifeCycle);
+
+				// Ik leg even uit wat hier mis gaat: met new maak je een Asteroid (of Bullet) aan op de heap. Maar die word nooit meer verwijderd.
+				// Alleen de referentie daarnaartoe word wel verwijderd. Ofwel-- er ontstaat een leak.
+				// Dit kun je ook terug zien in het geheugengebruik van je game. Die gaat naarmate het langer draait alsmaar omhoog.
+				//
+				// De rule-of-thumb met het gebruiken van new is dat er ALTIJD een bijbehorende delete bij moet. Je hebt hier classes voor
+				// die dit voor je kunnen doen. Bijvoorbeeld std::unique_ptr. Als je die overschrijft dan word de oude resource automatisch gedelete.
+				//
+				// Maar het makkelijkste blijft toch om geen new te gebruiken, en als je ze moet gebruiken,
+				// gebruik iets als std::unique_ptr en std::make_unique.
+				// https://en.cppreference.com/w/cpp/memory/unique_ptr
+				//
+				// Door de ruwe pointers in allGameobjects te vervangen met std::unique_ptrs heb ik al ervoor gezorgd dat het geheugengebruik minder hard
+				// groet. Maar helaas is het nog niet constant. (Of eigenlijk zou het niet meer moeten groeien na een bepaalde tijd, dat heb ik nog niet
+				// getest! Doe dat vooral)
+
 				break;
 			}
 		}

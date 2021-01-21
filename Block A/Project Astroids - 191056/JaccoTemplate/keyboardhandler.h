@@ -2,7 +2,7 @@
 
 namespace Tmpl8
 {
-	class KeyboardHandler
+	class KeyboardHandler // Doet deze keyboard handler wel iets? Misschien kun je nadenken over een betere naam
 	{
 	public:
 		bool isLeftInputButtonDown = false;

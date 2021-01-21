@@ -21,12 +21,13 @@ namespace Tmpl8
 
 	void Bullet::Collision(Gameobject* object)
 	{
-		bool minX = pos.x + 10 >= (object->GetPos().x + 20) * object->GetSize();
-		bool maxX = pos.x <= object->GetPos().x;
-		bool minY = pos.y + 30 >= (object->GetPos().y + 30) * object->GetSize();
-		bool maxY = pos.y <= object->GetPos().y;
+		bool minX = pos.x + 10 >= (object->GetPos().x + 20) * object->GetSize(); // Magic numbers
+		bool maxX = pos.x <= object->GetPos().x; // Magic numbers
+		bool minY = pos.y + 30 >= (object->GetPos().y + 30) * object->GetSize(); // Magic numbers
+		bool maxY = pos.y <= object->GetPos().y; // Magic numbers
 
-		if(minX || maxX || minY || maxY)
+		if(minX || maxX || minY || maxY) // Ik ben altijd heel fel geweest tegen het niet gebruiken van accolades { en }.
+										 // Want ik vergeet ze altijd toe te voegen als ik iets toevoeg.
 			return;
 
 		/*std::cout << pos.x + 10 << " . " << (object->GetPos().x + 20) * object->GetSize() << std::endl;
@@ -34,8 +35,8 @@ namespace Tmpl8
 		std::cout << pos.y + 30 << " . " << (object->GetPos().y + 30) * object->GetSize() << std::endl;
 		std::cout << pos.y << " . " << object->GetPos().y << std::endl;*/
 
-		String fullObjectName = String(typeid(*object).name());
-		fullObjectName.StringFromIndex(13);
+		String fullObjectName = String(typeid(*object).name()); // Gebruik geen RTTI
+		fullObjectName.StringFromIndex(13); // Memory leak, net zoals bij de collision van asteroid
 
 		if (isOwnerPlayer && object != this && fullObjectName == "Asteroid")
 		{
@@ -68,6 +69,7 @@ namespace Tmpl8
 
 	void Bullet::Movement(float deltaTime)
 	{
+		// Als je mijn voorgestelde veranderingen aan asteroid toevoegd, doe dat hier dan ook.
 		if (pos.x > (SCRWIDTH + 10))
 		{
 			pos.x = 1 - 10;
